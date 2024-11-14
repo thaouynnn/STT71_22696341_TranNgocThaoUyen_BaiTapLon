@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết 1 | PURE OPAL OFFICIAL</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <!-- js -->
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sanpham.js"></script>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
+        <!-- Brand and logo -->
+        <a class="navbar-brand" href="../html/index.html"><img src="../images/img/logo..png" alt="logo" style="width:45px;"></a>
+        <a href="" class="navbar-brand font-weight-bold"> PURE OPAL OFFICIAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-dark"></i>
+    </button>
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="nav-menu-link">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> TRANG
+                    CHỦ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> CỬA
+                    HÀNG</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa fa-list"></i> SẢN PHẨM
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../html/chamsocdamat.html">Chăm sóc da mặt</a>
+                        <a class="dropdown-item" href="../html/chamsoccothe.html">Chăm sóc cơ thể</a>
+                        <a class="dropdown-item" href="../html/chamsoctoc.html">Chăm sóc tóc</a>
+                        <a class="dropdown-item" href="../html/trangdiem.html">Trang điểm</a>
+                        <a class="dropdown-item" href="../html/nuochoa.html">Nước Hoa</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/gio-hang.html">
+                        <i class="fas fa-shopping-cart"></i> GIỎ HÀNG
+                        <span id="cart-count" class="badge badge-pill badge-danger">0</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/blog.html"> <i class="fa-solid fa-comments"></i> BÀI VIẾT</a>
+                </li>
+
+                <!-- User dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../html/dang-nhap.html">Đăng nhập</a>
+                        <!-- Link to Login page -->
+                        <a class="dropdown-item" href="../html/dang-ky.html">Đăng ký</a>
+                        <!-- Link to Register page -->
+                        <a class="dropdown-item" href="../html/thanh-vien.html">Thành viên</a>
+                        <!-- Link to Members page -->
+                        <a class="dropdown-item" href="../html/lien-he.html">Liên hệ</a>
+                        <!-- Link to Contact page -->
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- nav right và mục tìm kiếm -->
+            <form id="nav-form-search" class="form-inline ml-auto" action="">
+
+
+                <!-- mục tìm kiếm -->
+                <div class="input-group" id="input-search-top">
+                    <!-- Mục tìm kiếm -->
+                    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../html/index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="../html/blog.html">Bài viết</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Review Son Bóng Romand Juicy Lasting Tint, Màu Son Nào Được Yêu Thích Nhất?
+            </li>
+        </ol>
+
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 d-none d-md-block mt-5" id="aside">
+
+                <!-- sản phấm bán chạy nhất -->
+                <div class="row" id="bestSellersCarouselContainer">
+                    <!-- SP1 -->
+                    <div class="col-lg-12 col-md-3 p-2">
+                        <div class="product-card" data-product="{&quot;name&quot;:&quot;Trang Điểm - romand&quot;,&quot;image&quot;:&quot;../images/trangdiem/romand.jpg&quot;,&quot;category&quot;:&quot;Trang Điểm&quot;,&quot;description&quot;:&quot;Bảng màu đa dạng từ màu nude nhẹ nhàng đến những tông đỏ gạch trầm cùng chất son sáng bóng, trong trẻo tựa lớp đường kẹo hồ lô.&quot;,&quot;price&quot;:179000}">
+
+                            <div class="product-content">
+                                <img src="../images/trangdiem/romand.jpg" alt="Trang Điểm - romand" class="product-image img-fluid float-left mr-2">
+                                <div class="product-title text-center">Trang Điểm - romand</div>
+                                <div class="product-description">Bảng màu đa dạng từ màu nude nhẹ nhàng đến những tông đỏ gạch trầm cùng chất son sáng bóng, trong trẻo tựa lớp đường kẹo hồ lô.</div>
+                                <ul id="vote-5-star" class="mr-0">
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                </ul>
+                                <div class="product-price-container">
+                                    <div class="product-price">179.000 VND</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- SP2 -->
+                    <div class="col-lg-12 col-md-3 p-2">
+                        <div class="product-card" data-product="{&quot;name&quot;:&quot;Chăm sóc da mặt - Tẩy trang Bioderma&quot;,&quot;image&quot;:&quot;../images/chamsocdamat/taytrang_bioderma.jpg&quot;,&quot;category&quot;:&quot;Chăm sóc da mặt&quot;,&quot;description&quot;:&quot;Làm sạch sâu da và loại bỏ lớp trang điểm nhanh chóng mà không cần rửa lại bằng nước.&quot;,&quot;price&quot;:350000}">
+                            <div class="product-content ">
+                                <img src="../images/chamsocdamat/taytrang_bioderma.jpg" alt="Chăm sóc da mặt - Tẩy trang Bioderma" class="product-image float-left mr-2">
+                                <div class="product-title text-center">Chăm sóc da mặt - Tẩy trang Bioderma</div>
+                                <div class="product-description">Làm sạch sâu da và loại bỏ lớp trang điểm nhanh chóng mà không cần rửa lại bằng nước.</div>
+                                <ul id="vote-5-star" class="mr-0">
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                </ul>
+                                <div class="product-price-container">
+                                    <div class="product-price">350.000 VND</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- SP3 -->
+                    <div class="col-lg-12 col-md-3 p-2">
+                        <div class="product-card" data-product="{&quot;name&quot;:&quot;Trang Điểm - zeesea&quot;,&quot;image&quot;:&quot;../images/trangdiem/zeesea.jpg&quot;,&quot;category&quot;:&quot;Trang Điểm&quot;,&quot;description&quot;:&quot;Mascara chống thấm nước uper, giải quyết vấn đề lem trang điểm mắt, không thấm nước, không thấm mồ hôi, không chống rách.&quot;,&quot;price&quot;:79000}">
+                            <div class="product-content ">
+                                <img src="../images/trangdiem/zeesea.jpg" alt="Trang Điểm - zeesea" class="product-image float-left mr-2">
+                                <div class="product-title text-center">Trang Điểm - zeesea</div>
+                                <div class="product-description">Mascara chống thấm nước uper, giải quyết vấn đề lem trang điểm mắt, không thấm nước, không thấm mồ hôi, không chống rách.</div>
+                                <ul id="vote-5-star" class="mr-0">
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                </ul>
+                                <div class="product-price-container">
+                                    <div class="product-price">79.000 VND</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- sp4 -->
+                    <div class="col-lg-12 col-md-3 p-2">
+                        <div class="product-card" data-product="{&quot;name&quot;:&quot;Nước Hoa - Nước hoa Skinlax&quot;,&quot;image&quot;:&quot;../images/nuochoa/Skinlax.webp&quot;,&quot;category&quot;:&quot;Nước Hoa&quot;,&quot;description&quot;:&quot;Lời gọi mời từ hoa thơm, trái chín mang lại cảm giác trẻ trung, ngọt ngào cho người sử dụng.&quot;,&quot;price&quot;:200000}">
+                            <div class="product-content ">
+                                <img src="../images/nuochoa/Skinlax.jpg" alt="Nước Hoa - Nước hoa Skinlax" class="product-image img-fluid float-left mr-2 ">
+                                <div class="product-title text-center">Nước Hoa - Nước hoa Skinlax</div>
+                                <div class="product-description">Lời gọi mời từ hoa thơm, trái chín mang lại cảm giác trẻ trung, ngọt ngào cho người sử dụng.</div>
+                                <ul id="vote-5-star" class="mr-0">
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                </ul>
+                                <div class="product-price-container">
+                                    <div class="product-price ">200.000 VND</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9" id="section">
+                <!-- Bài viết start -->
+                <div class="container-fluid my-4">
+                    <div class="row p-3">
+                        <h1 class="text-center">Review Son Bóng Romand Juicy Lasting Tint, Màu Son Nào Được Yêu Thích Nhất?</h1>
+
+
+                        <div class="col-md-3 my-2"><img src="../images/img/blog.jpg" class="mr-3 img-fluid rounded" alt="Blog 1"></div>
+                        <div class="col-md-9 my-2">
+                            <p>
+                                Khám phá vẻ đẹp đa dạng của bộ sưu tập son bóng Romand Juicy Lasting Tint
+                            </p>
+                            <p>
+                                Dưới đây là những màu son được yêu thích nhất trong bộ sưu tập son bóng Romand Juicy Lasting Tint:
+                            </p>
+                            <ol>
+                                <li>
+                                    <strong>Son bóng Romand Juicy Lasting Tint 06 Fig Fig:</strong><br> Màu son Fig Fig là sự kết hợp giữa sắc hồng tím và màu đỏ đất, tạo nên một sắc son độc đáo và quyến rũ. Màu son này mang đến vẻ đẹp cá tính và nổi
+                                    bật cho đôi môi.
+                                </li>
+                                <li>
+                                    <strong>Son bóng Romand Juicy Lasting Tint 13 Eat Dotori:</strong><br> Màu son Eat Dotori là sắc cam đất đậm, tạo nên vẻ đẹp ấm áp và quyến rũ. Màu son này mang đến sự tươi trẻ và năng động cho đôi môi.
+                                </li>
+                                <li>
+                                    <strong>Son bóng Romand Juicy Lasting Tint 19 Almond Rose:</strong><br> Màu son Almond Rose là sắc hồng đậm, tạo nên vẻ đẹp nhẹ nhàng và trầm tính. Màu son này phù hợp với nhiều phong cách trang điểm và làm nổi bật
+                                    đôi môi.
+                                </li>
+                                <li>
+                                    <strong>Son bóng Romand Juicy Lasting Tint 20 Dark Coconut:</strong><br> Màu son Dark Coconut là sắc hồng nâu đậm, tạo nên vẻ đẹp quyến rũ và lôi cuốn. Màu son này đem lại vẻ đẹp tinh tế và đầy cá tính.
+                                </li>
+                                <li>
+                                    <strong>Son bóng Romand Juicy Lasting Tint 21 Deep Sangria:</strong><br> Deep Sangria là một trong những dóng son đổ rượu tạo nên vẻ đẹp sắc nét và đầy quyến rũ. Màu son này mang đến vẻ đẹp sang trọng và cá tính cho
+                                    đôi môi.
+                                </li>
+                            </ol>
+                            <p>
+                                Son bóng Romand Juicy Lasting Tint là một dòng son bóng đáng để trải nghiệm. Màu sắc đa dạng, chất son tint bóng mượt mà và đẹp mắt, cùng giá thành bình dân là những điểm nổi bật của dòng son này. Với sự đa dạng và chất lượng của Romand Juicy Lasting
+                                Tint, mỗi người có thể tìm thấy một màu son ưng ý và phù hợp với phong cách cá nhân.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- end bài viết -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                </div>
+                <div id="alertContainer"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- foooter start -->
+    <div class="footer bg-brown text-white py-4">
+        <div class="container text-center">
+            <h2 class="mb-2">PURE OPAL OFFICIAL</h2>
+            <p class="mb-3">Điểm đến lý tưởng cho mọi tín đồ yêu thích mỹ phẩm và chăm sóc sắc đẹp!</p>
+            <div class="social-icons mb-4">
+                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-google"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-skype"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© Copyright <strong>PURE OPAL OFFICIAL</strong>. All Rights Reserved</p>
+            <p>Designed By <a href="#" class="text-decoration-none text-blue">thaouyn.tr</a></p>
+            <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </div>
+
+    <!-- footer endd -->
+
+
+</body>
+
+
+</html>

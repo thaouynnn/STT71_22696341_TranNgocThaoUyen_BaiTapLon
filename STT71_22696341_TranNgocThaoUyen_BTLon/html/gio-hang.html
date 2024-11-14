@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE OPAL OFFICIAL</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <!-- js -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sanpham.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        /* Đảm bảo body và html có chiều cao đầy đủ */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        /* Sử dụng flexbox cho bố cục */
+        
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* Nội dung sẽ chiếm phần lớn không gian */
+        
+        .content {
+            flex: 1;
+        }
+        /* Footer */
+        
+        .footer {
+            background-color: #5a4d4d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* Khoảng trống dưới cùng cho giỏ hàng */
+        
+        .cart-summary {
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
+            <!-- Brand and logo -->
+            <a class="navbar-brand" href="../html/index.html"><img src="../images/img/logo..png" alt="logo" style="width:45px;"></a>
+            <a href="" class="navbar-brand font-weight-bold"> PURE OPAL OFFICIAL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-dark"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" id="nav-menu-link">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> TRANG CHỦ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> CỬA HÀNG</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <i class="fa fa-list"></i> SẢN PHẨM
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/chamsocdamat.html">Chăm sóc da mặt</a>
+                            <a class="dropdown-item" href="../html/chamsoccothe.html">Chăm sóc cơ thể</a>
+                            <a class="dropdown-item" href="../html/chamsoctoc.html">Chăm sóc tóc</a>
+                            <a class="dropdown-item" href="../html/trangdiem.html">Trang điểm</a>
+                            <a class="dropdown-item" href="../html/nuochoa.html">Nước Hoa</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/gio-hang.html">
+                            <i class="fas fa-shopping-cart"></i> GIỎ HÀNG
+                            <span id="cart-count" class="badge badge-pill badge-danger">0</span></p>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/blog.html"><i class="fa-solid fa-comments"></i> BÀI VIẾT</a>
+                    </li>
+                    <!-- User dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../html/dang-nhap.html">Đăng nhập</a>
+                            <a class="dropdown-item" href="../html/dang-ky.html">Đăng ký</a>
+                            <a class="dropdown-item" href="../html/thanh-vien.html">Thành viên</a>
+                            <a class="dropdown-item" href="../html/lien-he.html">Liên hệ</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Search form -->
+                <form id="nav-form-search" class="form-inline ml-auto">
+                    <div class="input-group" id="input-search-top">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-light" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../html/index.html">Trang chủ</a></li>
+                <li class="breadcrumb-item"><a href="../html/shop.html">Cửa hàng</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Giỏ Hàng</li>
+            </ol>
+        </nav>
+
+        <!-- Content -->
+        <div class="container-fluid content">
+            <div class="row">
+                <div class="col-3" id="aside">
+                    <span class="display-4">GIỎ HÀNG</span>
+                    <div id="cart-items-container"></div>
+                </div>
+                <div class="col-9" id="section">
+                    <span class="display-4">TOTAL</span>
+                    <div id="bill-table"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary d-flex justify-content-center align-items-center p-3">
+            <div class="cart-total" style="margin-right: 10px;">
+                <span class="total-label" style="margin-right: 10px;">Tổng thanh toán (<span id="total-items">0</span> Sản phẩm): </span>
+                <span class="total-amount text-danger font-weight-bold" id="total-price">đ 0</span>
+            </div>
+            <button class="btn btn-danger" id="checkout-btn">Thanh Toán</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer" style="background-color: #69c5ef; color: white;">
+            <div class="container text-center">
+                <h2 class="mb-2">PURE OPAL OFFICIAL</h2>
+                <p class="mb-3">Điểm đến lý tưởng cho mọi tín đồ yêu thích mỹ phẩm và chăm sóc sắc đẹp!</p>
+                <div class="social-icons mb-4">
+                    <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-google"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-skype"></i></a>
+                    <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>© Copyright <strong>PURE OPAL OFFICIAL</strong>. All Rights Reserved</p>
+                <p>Designed By <a href="#" class="text-decoration-none text-blue">thaouyn.tr</a></p>
+                <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

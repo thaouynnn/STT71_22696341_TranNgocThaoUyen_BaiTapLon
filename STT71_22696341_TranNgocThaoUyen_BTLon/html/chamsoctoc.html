@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chăm sóc tóc | PURE OPAL OFFICIAL</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <!-- js -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sanpham.js"></script>
+
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
+        <!-- Brand and logo -->
+        <a class="navbar-brand" href="../html/index.html"><img src="../images/img/logo..png" alt="logo" style="width:45px;"></a>
+        <a href="" class="navbar-brand font-weight-bold"> PURE OPAL OFFICIAL</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars text-dark"></i>
+    </button>
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="nav-menu-link">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> TRANG
+                    CHỦ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> CỬA
+                    HÀNG</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa fa-list"></i> SẢN PHẨM
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../html/chamsocdamat.html">Chăm sóc da mặt</a>
+                        <a class="dropdown-item" href="../html/chamsoccothe.html">Chăm sóc cơ thể</a>
+                        <a class="dropdown-item" href="../html/chamsoctoc.html">Chăm sóc tóc</a>
+                        <a class="dropdown-item" href="../html/trangdiem.html">Trang điểm</a>
+                        <a class="dropdown-item" href="../html/nuochoa.html">Nước Hoa</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/gio-hang.html">
+                        <i class="fas fa-shopping-cart"></i> GIỎ HÀNG
+                        <span id="cart-count" class="badge badge-pill badge-danger">0</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/blog.html"> <i class="fa-solid fa-comments"></i> BÀI VIẾT</a>
+                </li>
+
+                <!-- User dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../html/dang-nhap.html">Đăng nhập</a>
+                        <!-- Link to Login page -->
+                        <a class="dropdown-item" href="../html/dang-ky.html">Đăng ký</a>
+                        <!-- Link to Register page -->
+                        <a class="dropdown-item" href="../html/thanh-vien.html">Thành viên</a>
+                        <!-- Link to Members page -->
+                        <a class="dropdown-item" href="../html/lien-he.html">Liên hệ</a>
+                        <!-- Link to Contact page -->
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- nav right và mục tìm kiếm -->
+            <form id="nav-form-search" class="form-inline ml-auto" action="">
+
+
+                <!-- mục tìm kiếm -->
+                <div class="input-group" id="input-search-top">
+
+                    <!-- Mục tìm kiếm -->
+                    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../html/index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="../html/shop.html">Cửa hàng</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chăm sóc tóc</li>
+        </ol>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" id="aside">
+                <div class=" px-2">
+                    <div class="list-group" id="category-list-nav">
+                        <h4>Danh mục sản phẩm</h4>
+                        <a href="../html/shop.html" class="list-group-item list-group-item-action ">Tất cả sản
+                            phẩm</a>
+                        <a href="../html/chamsoccothe.html" class="list-group-item list-group-item-action ">Chăm sóc cơ thể</a>
+                        <a href="../html/chamsocdamat.html" class="list-group-item list-group-item-action">Chăm sóc da mặt</a>
+                        <a href="../html/chamsoctoc.html" class="list-group-item list-group-item-action active">Chăm sóc tóc</a>
+                        <a href="../html/trangdiem.html" class="list-group-item list-group-item-action">Trang điểm</a>
+                        <a href="../html/nuochoa.html" class="list-group-item list-group-item-action">Nước hoa</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-9" id="section">
+                <div id="top"></div>
+                <div id="productList" class="row">
+                    <!-- Đây là nơi để hiển thị danh sách sản phẩm -->
+                </div>
+                <ul id="pagination" class="pagination justify-content-center">
+                    <!-- Đây là nơi để hiển thị thanh phân trang -->
+                </ul>
+                <script>
+                    $(document).ready(function() {
+                        displayProducts(productList, 'Chăm sóc tóc');
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                </div>
+                <div id="alertContainer"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- foooter start -->
+    <div class="footer bg-brown text-white py-4">
+        <div class="container text-center">
+            <h2 class="mb-2">PURE OPAL OFFICIAL</h2>
+            <p class="mb-3">Điểm đến lý tưởng cho mọi tín đồ yêu thích mỹ phẩm và chăm sóc sắc đẹp!</p>
+            <div class="social-icons mb-4">
+                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-google"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-skype"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© Copyright <strong>PURE OPAL OFFICIAL</strong>. All Rights Reserved</p>
+            <p>Designed By <a href="#" class="text-decoration-none text-blue">thaouyn.tr</a></p>
+            <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </div>
+
+    <!-- footer endd -->
+
+</body>
+
+
+</html>
